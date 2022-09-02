@@ -1,14 +1,11 @@
 import copy
 import random
-# Consider using the modules imported above.
 
 class Hat:
 
     def __init__(self, **kwargs):
         self.contents = list()
-        # self.hat_balls = dict()
         for color, num in kwargs.items():
-            # self.hat_balls[color] = num
             for i in range(num):
                 self.contents.append(color)
 
